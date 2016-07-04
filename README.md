@@ -9,7 +9,9 @@
 	add id_rsa.pub github---SSH keys
 #step4 
 	github create a Repository
-#step5
+#step5 
+	add .gitignore
+#step6
 	git config --global user.name "xxx"
 	git config --global user.email "xxxx@xxx.com"
 	
