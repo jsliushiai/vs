@@ -30,3 +30,5 @@
 	git add README.md
 	git commit -m "add README"
 	git push -u origin master
+
+git push origin master
