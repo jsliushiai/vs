@@ -63,6 +63,7 @@ public:
 	afx_msg void OnUpdateToolsDraw(CCmdUI *pCmdUI);
 	afx_msg void OnSettingsDrawenable();
 	afx_msg void OnUpdateSettingsDrawenable(CCmdUI *pCmdUI);
+	afx_msg void OnTimer(UINT_PTR nIDEvent);
 };
 
 

@@ -30,6 +30,7 @@ BEGIN_MESSAGE_MAP(CMainFrame, CFrameWndEx)
 	ON_UPDATE_COMMAND_UI(ID_TOOLS_DRAW, &CMainFrame::OnUpdateToolsDraw)
 	ON_COMMAND(ID_SETTINGS_DRAWENABLE, &CMainFrame::OnSettingsDrawenable)
 	ON_UPDATE_COMMAND_UI(ID_SETTINGS_DRAWENABLE, &CMainFrame::OnUpdateSettingsDrawenable)
+	ON_WM_TIMER()
 END_MESSAGE_MAP()
 
 static UINT indicators[] =
@@ -38,6 +39,7 @@ static UINT indicators[] =
 	ID_INDICATOR_CAPS,
 	ID_INDICATOR_NUM,
 	ID_INDICATOR_SCRL,
+	ID_INDICATOR_TIME,
 };
 
 // CMainFrame 构造/析构
@@ -177,6 +179,8 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	lstBasicCommands.AddTail(ID_SORTING_GROUPBYTYPE);
 
 	CMFCToolBar::SetBasicCommands(lstBasicCommands);
+	//启动定时期 1s
+	SetTimer(1,1000,NULL);
 
 	return 0;
 }
@@ -435,4 +439,17 @@ void CMainFrame::OnUpdateSettingsDrawenable(CCmdUI *pCmdUI)
 {
 	// TODO: 在此添加命令更新用户界面处理程序代码
 	pCmdUI->SetCheck(m_bDraw); 
+}
+
+
+void CMainFrame::OnTimer(UINT_PTR nIDEvent)
+{
+	// TODO: 在此添加消息处理程序代码和/或调用默认值
+	CString strTime;
+	CTime curTime = CTime::GetCurrentTime();
+	strTime = curTime.Format(_T("%H:%M:%S"));
+
+	m_wndStatusBar.SetPaneText(4,strTime);
+
+	CFrameWndEx::OnTimer(nIDEvent);
 }
