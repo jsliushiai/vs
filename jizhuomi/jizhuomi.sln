@@ -31,6 +31,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Example33", "Example33\Exam
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Example34", "Example34\Example34.vcxproj", "{F2152CE6-1FC8-40FA-B682-322D00A3700E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CString", "CString\CString.vcxproj", "{774F3D2D-47DD-448D-AEDD-D513D763F418}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CTime-CTimeSpan", "CTime-CTimeSpan\CTime-CTimeSpan.vcxproj", "{4159CA32-B4B4-4C02-96A3-4383845DC9FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -97,6 +101,14 @@ Global
 		{F2152CE6-1FC8-40FA-B682-322D00A3700E}.Debug|Win32.Build.0 = Debug|Win32
 		{F2152CE6-1FC8-40FA-B682-322D00A3700E}.Release|Win32.ActiveCfg = Release|Win32
 		{F2152CE6-1FC8-40FA-B682-322D00A3700E}.Release|Win32.Build.0 = Release|Win32
+		{774F3D2D-47DD-448D-AEDD-D513D763F418}.Debug|Win32.ActiveCfg = Debug|Win32
+		{774F3D2D-47DD-448D-AEDD-D513D763F418}.Debug|Win32.Build.0 = Debug|Win32
+		{774F3D2D-47DD-448D-AEDD-D513D763F418}.Release|Win32.ActiveCfg = Release|Win32
+		{774F3D2D-47DD-448D-AEDD-D513D763F418}.Release|Win32.Build.0 = Release|Win32
+		{4159CA32-B4B4-4C02-96A3-4383845DC9FE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4159CA32-B4B4-4C02-96A3-4383845DC9FE}.Debug|Win32.Build.0 = Debug|Win32
+		{4159CA32-B4B4-4C02-96A3-4383845DC9FE}.Release|Win32.ActiveCfg = Release|Win32
+		{4159CA32-B4B4-4C02-96A3-4383845DC9FE}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
