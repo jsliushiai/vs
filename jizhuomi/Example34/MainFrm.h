@@ -43,6 +43,8 @@ protected:  // 控件条嵌入成员
 	CClassView        m_wndClassView;
 	COutputWnd        m_wndOutput;
 	CPropertiesWnd    m_wndProperties;
+	CSplitterWnd	  m_wndSplitter;
+
 
 // 生成的消息映射函数
 protected:
@@ -64,6 +66,7 @@ public:
 	afx_msg void OnSettingsDrawenable();
 	afx_msg void OnUpdateSettingsDrawenable(CCmdUI *pCmdUI);
 	afx_msg void OnTimer(UINT_PTR nIDEvent);
+	virtual BOOL OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext* pContext);
 };
 
 

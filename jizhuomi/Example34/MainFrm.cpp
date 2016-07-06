@@ -6,6 +6,7 @@
 #include "Example34.h"
 
 #include "MainFrm.h"
+#include "Example34View.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -452,4 +453,24 @@ void CMainFrame::OnTimer(UINT_PTR nIDEvent)
 	m_wndStatusBar.SetPaneText(4,strTime);
 
 	CFrameWndEx::OnTimer(nIDEvent);
+}
+
+
+BOOL CMainFrame::OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext* pContext)
+{
+	// TODO: 在此添加专用代码和/或调用基类
+	CRect rc;
+	GetClientRect(&rc);
+	if(!m_wndSplitter.CreateStatic(this,2,1))
+		return FALSE;
+
+	if(!m_wndSplitter.CreateView(0,0,RUNTIME_CLASS(CExample34View),CSize(rc.Width(),rc.Height()/2),pContext))
+		return FALSE;
+
+	if (!m_wndSplitter.CreateView(1, 0, RUNTIME_CLASS(CExample34View), CSize(rc.Width(), rc.Height()/2), pContext))   
+        return FALSE; 
+
+	return TRUE; 
+
+	//return CFrameWndEx::OnCreateClient(lpcs, pContext);
 }

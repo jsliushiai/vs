@@ -3,7 +3,7 @@
 //
 
 #pragma once
-
+#include "Example34Doc.h"
 
 class CExample34View : public CView
 {
