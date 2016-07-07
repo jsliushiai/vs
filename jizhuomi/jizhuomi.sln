@@ -35,6 +35,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CString", "CString\CString.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CTime-CTimeSpan", "CTime-CTimeSpan\CTime-CTimeSpan.vcxproj", "{4159CA32-B4B4-4C02-96A3-4383845DC9FE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Example44", "Example44\Example44.vcxproj", "{3C05B57D-1D6F-466F-85CE-06575485C87E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -109,6 +111,10 @@ Global
 		{4159CA32-B4B4-4C02-96A3-4383845DC9FE}.Debug|Win32.Build.0 = Debug|Win32
 		{4159CA32-B4B4-4C02-96A3-4383845DC9FE}.Release|Win32.ActiveCfg = Release|Win32
 		{4159CA32-B4B4-4C02-96A3-4383845DC9FE}.Release|Win32.Build.0 = Release|Win32
+		{3C05B57D-1D6F-466F-85CE-06575485C87E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3C05B57D-1D6F-466F-85CE-06575485C87E}.Debug|Win32.Build.0 = Debug|Win32
+		{3C05B57D-1D6F-466F-85CE-06575485C87E}.Release|Win32.ActiveCfg = Release|Win32
+		{3C05B57D-1D6F-466F-85CE-06575485C87E}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
